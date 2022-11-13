@@ -1,0 +1,101 @@
+#header {
+    font-size: 10px;
+    width: 100%;
+    height: 8.6rem;
+
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    margin: auto;
+    
+    #header__container {
+        width: 145.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #header__logo {
+            width: 17.5rem;
+        }
+    
+        #header__navbar {
+    
+            #header__list {
+                display: flex;
+    
+                .header__links {
+                    list-style: none;
+                    
+                    &:nth-child(-n+3) {
+                        margin-right: 4rem;
+                    }
+    
+                    a {
+                        @include text-settings( 1.7rem, 1.7rem, 'arp_display_normal', var(--light-text-color));
+                    }
+                }
+            }
+
+            #header__menu {
+                width: 6rem;
+                height: 4rem;
+                cursor: pointer;
+
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                .header__menu-lines {
+                    width: 100%;
+                    height: 0.4rem;
+                    background-color: var(--dark-main-color);
+                }
+            }
+        }
+
+        #header__button {
+            @include text-settings( 2.2rem, 2.2rem, 'arp_display_normal', var(--light-text-color));
+            cursor: pointer;
+            border: 0.1rem solid white;
+            padding: 1.4rem 3.2rem;
+            background-color: transparent;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #header {
+
+        #header__container {
+            width: 80%;
+
+            #header__navbar {
+                order: 3;
+
+                #header__list {
+                    display: none;
+                }
+
+                #header__menu {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    #header {
+
+        #header__container {
+
+            #header__button {
+                display: none;
+            }
+        }
+    }
+}
