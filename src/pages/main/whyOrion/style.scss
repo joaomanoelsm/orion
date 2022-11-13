@@ -40,12 +40,22 @@
                 @include text-settings( 2.4rem, 2.2rem, 'Aceh', var(--dark-text-color));
             }
 
-            #whyOrion__button {
-                @include text-settings( 3.2rem, 3.2rem, 'arp_bold', var(--light-title-color));
-                padding: 2.2rem 12.2rem;
-                background-color: var(--main-color);
-                border: none;
-                margin-top: 2.4rem;
+            a {
+                text-decoration: none;
+
+                #whyOrion__button {
+                    @include text-settings( 3.2rem, 3.2rem, 'arp_bold', var(--light-title-color));
+                    background-color: var(--main-color);
+                    margin-top: 2.4rem;
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    width: 100%;
+                    border: none;
+                    padding: 2.2rem 0;
+                }
             }
         }
     }
@@ -64,11 +74,34 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 425px) {
     #whyOrion {
 
         #whyOrion__container {
             width: 80%;
+
+            #whyOrion__title-contain {
+                width: 100%;
+    
+                #whyOrion__icon {
+                    width: 13rem;
+                    margin-bottom: 1.2rem
+                }
+    
+                #whyOrion__title {
+                    @include text-settings( 3.2rem, 3.4rem, 'arp_bold', var(--dark-text-color));
+                }
+            }
+
+            #whyOrion__info {
+                max-width: 61.2rem;
+                border: 1px solid black;
+                padding: 4rem;
+                border-radius: 3rem;
+    
+                #whyOrion__button {
+                }
+            }
         }
     }
 }
