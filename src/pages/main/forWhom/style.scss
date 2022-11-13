@@ -1,0 +1,83 @@
+#forWhom {
+    width: 100%;
+    height: 108rem;
+    max-width: 1920px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #forWhom__container {
+
+        #forWhom__title {
+            @include text-settings( 4rem, 4rem, 'arp_bold', var(--dark-title-color));
+
+            span {
+                color: var(--main-color);
+            }
+        }
+
+        #forWhom__itens-contain {
+            width: 136rem;
+
+            margin: 6rem 0 4rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            .forWhom__itens {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+
+                border: 1px solid black;
+                border-radius: 2.4rem;
+                padding: 11rem 6rem 13rem 6rem;
+                max-width: 40rem;
+                max-height: 40rem;
+
+                .forWhom__itens-title {
+                    @include text-settings( 2rem, 2rem, 'arp_bold', var(--main-color));
+                    margin-bottom: 4rem;
+                }
+
+                .forWhom__text {
+                    @include text-settings( 2.4rem, 2.4rem, 'Aceh', var(--dark-title-color));
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            #forWhom__button {
+                @include text-settings( 2.4rem, 2.4rem, 'arp_bold', var(--light-title-color));
+                background-color: var(--main-color);
+                margin-top: 2.4rem;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                border: none;
+                padding: 2.8rem 12rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    #forWhom {
+        height: 960px;
+
+        #forWhom__container {
+
+            #forWhom__itens-contain {
+                width: 40rem;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+    }
+}

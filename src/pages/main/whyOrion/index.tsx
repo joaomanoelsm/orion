@@ -18,6 +18,11 @@ const WhyOrion = () => {
                 Seja bem vindo a um novo nível, a partir de agora está prestes a conhecer as nossos principais soluções, mas para isso preciso te alertar, a Orion está fadada ao sucesso e estamos dispostos a caminhar ao lado apenas daqueles que compreendem total capacidade de nossa agência.
                 </p>
                 <a href="#"><button id="whyOrion__button">Saiba mais</button></a>
+                <div id='whyOrion__decorator'>
+                    <div className='whyOrion__circle'></div>
+                    <div className='whyOrion__circle'></div>
+                    <div className='whyOrion__circle'></div>
+                </div>
             </div>
         </div>
     </section>
