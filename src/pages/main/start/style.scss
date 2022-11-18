@@ -31,11 +31,37 @@
             }
 
             #start__button {
+                transition: all .7s;
                 @include text-settings( 4em, 1em, 'arp_bold', var(--light-title-color));
-                background-color: var(--dark-main-color);
+                background: linear-gradient(TO RIGHT, var(--dark-main-color), #eef643);
                 cursor: pointer;
                 border: none;
                 padding: 0.8em 2.5em;
+                position: relative;
+                
+                background-size: 300% 300%;
+                animation: infinit 3s infinite;
+
+                &::after {
+                    transition: all .7s;
+                    content: 'Contato';
+                    @include text-settings( 1em, 1em, 'arp_bold', var(--light-title-color));
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top:0; left: 0;
+                    z-index: 3;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to right, #543FC4, #8529B0);
+                    position: absolute;
+                    animation: name duration timing-function delay iteration-count direction fill-mode;
+                    opacity: 0;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
             }
         }
 
@@ -102,5 +128,15 @@
                 width: 320px;
             }
         }
+    }
+}
+
+@keyframes infinit {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 0% 100%;
     }
 }

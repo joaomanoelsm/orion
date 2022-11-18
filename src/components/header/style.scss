@@ -3,12 +3,13 @@
     width: 100%;
     height: 8.6rem;
 
+    transition: background .4s;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid white;
     
     position: fixed;
-    z-index: 2;
+    z-index: 1000;
     top: 0;
     margin: auto;
     
@@ -28,7 +29,24 @@
                 display: flex;
     
                 .header__links {
+                    position: relative;
+                    transition: all .4s;
                     list-style: none;
+
+                    &::after {
+                        content: '';
+                        transition: all .4s;
+                        position: absolute;
+                        width: 0%;
+                        height: 0.4rem;
+                        display: block;
+                        margin-bottom: 0.8rem;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                        background: linear-gradient(to right, var(--main-color), var(--light-main-color));
+                    }
                     
                     &:nth-child(-n+3) {
                         margin-right: 4rem;
@@ -57,14 +75,33 @@
             }
         }
 
-        #header__button {
-            @include text-settings( 2.2rem, 2.2rem, 'arp_display_normal', var(--light-text-color));
-            cursor: pointer;
-            border: 0.1rem solid white;
-            padding: 1.4rem 3.2rem;
-            background-color: transparent;
+        #header__button-link {
+    
+            #header__button {
+                transition: all .7s ease-in;
+                @include text-settings( 2.2rem, 2.2rem, 'arp_display_normal', var(--light-text-color));
+                cursor: pointer;
+                border: 0.1rem solid white;
+                padding: 1.4rem 3.2rem;
+                background-color: transparent;
+
+                &:hover {
+                    box-shadow: 0.1rem 0.1rem 1rem 0  hsla(249, 53%, 51%, 0.253),
+                    -0.1rem -0.1rem 1rem 0  hsla(249, 53%, 51%, 0.253),
+                    -0.2rem -0.2rem 1rem 0  hsla(249, 53%, 51%, 0.253)
+                    ;
+                    border: 0.1rem solid #543FC4;
+                    color: #543FC4;
+                    text-shadow: 0.1rem 0.1rem 1rem hsla(249, 53%, 51%, 0.253),
+                    0.2rem 0.2rem 1rem hsla(249, 53%, 51%, 0.253);
+                }
+            }
         }
     }
+}
+
+.header--background {
+    background-color: hsla(0, 0%, 24%, 0.801);
 }
 
 @media (max-width: 900px) {

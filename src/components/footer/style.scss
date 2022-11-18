@@ -1,0 +1,139 @@
+#footer {
+    width: 100%;
+    height: 62rem;
+    max-width: 1920px;
+
+    background-color: #262626;
+    margin: auto;
+    padding: 0 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #footer__container {
+        width: 171rem;
+
+        #footer__info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8.4rem;
+            flex-wrap: wrap;
+
+            #footer__logo {
+                width: 37.9rem;
+                margin-right: 4rem;
+            }
+
+            #footer__lists-container {
+                display: flex;
+                justify-content: space-between;
+                width: 81.5rem;
+
+                .footer__list-title {
+                    @include text-settings( 2.4rem, 2.4rem, 'arp_bold', var(--light-title-color) );
+                    margin-bottom: 1rem;
+                }
+
+                #footer__list-about {
+                    width: 38.2rem;
+                }
+
+                #footer__list-politics {
+                    width: 38.2rem;
+                }
+
+                .footer__lists {
+                    margin-top: 3.8rem;
+                    
+                    li {
+                        @include text-settings( 2.4rem, 3.2rem, 'Aceh', var(--light-text-color) );
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: var(--light-text-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        #footer__copyright-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2.4rem;
+
+            #footer__copyright {
+                @include text-settings( 2.4rem, 3.2rem, 'Aceh', var(--light-text-color) );
+            }
+
+            #footer__icons-container {
+                width: 30rem;
+                display: flex;
+                justify-content: space-between;
+
+                .footer__icons {
+                    height: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 784px) {
+    #footer {
+        height: 500px;
+
+        #footer__container {
+
+            #footer__logo {
+                margin-bottom: 6rem;
+            }
+            
+            #footer__info {
+                justify-content: center;
+
+                #footer__lists-container {
+                    flex-direction: column;
+                    
+                    #footer__list-about {
+                        margin-bottom: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    #footer {
+        height: 500px;
+
+        #footer__container {
+
+            #footer__copyright-container {
+                flex-direction: column;
+
+                #footer__copyright {
+                    margin: 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    #footer {
+
+        #footer__container {
+            width: 90%;
+
+            #footer__copyright-container {
+                padding: 0;
+            }
+        }
+    }
+}
