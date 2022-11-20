@@ -52,14 +52,45 @@
                     @include text-settings( 3.2rem, 3.2rem, 'arp_bold', var(--light-title-color));
                     background-color: var(--main-color);
                     margin-top: 2.4rem;
+                    cursor: pointer;
     
                     display: flex;
                     align-items: center;
                     justify-content: center;
     
+                    position: relative;
                     width: 100%;
                     border: none;
                     padding: 2.2rem 0;
+
+                    &::after {
+                        @include text-settings( 1em, 1em, 'arp_bold', var(--light-title-color));
+                        content: 'Saiba mais';
+                        transition: all .7s;
+                        position: absolute;
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        top:0; left: 0;
+                        z-index: 2;
+                        opacity: 0;
+    
+                        width: 100%;
+                        height: 100%;
+
+                        background: linear-gradient(to right, #533fc4, #8529b0, #533fc4, #8529b0, #533fc4, #8529b0, #533fc4);
+                        background-size: 1200% 100%;
+                        
+                        animation: infinit 10s ease infinite forwards;
+                        -webkit-animation: infinit 10s ease-in-out infinite forwards;
+                        -moz-animation: infinit 10s ease infinite forwards;
+                    }
+    
+                    &:hover::after {
+                        opacity: 1;
+                    }
                 }
             }
 

@@ -55,6 +55,10 @@
                         a {
                             text-decoration: none;
                             color: var(--light-text-color);
+
+                            &:hover {
+                                color: var(--main-color);
+                            }
                         }
                     }
                 }
@@ -71,12 +75,18 @@
             }
 
             #footer__icons-container {
+                position: relative;
                 width: 30rem;
                 display: flex;
                 justify-content: space-between;
 
                 .footer__icons {
+                    transition: transform .7s;
                     height: 2.8rem;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }

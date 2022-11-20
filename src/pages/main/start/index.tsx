@@ -4,7 +4,7 @@ import ArrowIcon from '../../../assets/svgs/Icon-Arrow-Bottom.svg'
 
 const Start = () => {
   return (
-    <section id='start' style={{ background: `url(${ StartBackground })`}}>
+    <section id='start' style={{ background: `url(${ StartBackground })`, backgroundSize: 'cover'}}>
         <div id='start__container'>
             <div id='start__info'>
               <h1 id='start__title'>Geramos <br /> soluções que viram <br /> resultados!</h1>

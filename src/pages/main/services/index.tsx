@@ -11,12 +11,12 @@ const Services = () => {
                 <p id='services__text'>Principais áreas que atuamos e desenvolvemos para nossos clientes.</p>
             </div>
             <div id='services__topics'>
-                <div className='services__topics-itens'>Lançamentos</div>
-                <div className='services__topics-itens'>Tráfego Pago</div>
-                <div className='services__topics-itens'>Audio Visual</div>
-                <div className='services__topics-itens'>Identidade Visual</div>
-                <div className='services__topics-itens'>Websites</div>
-                <div className='services__topics-itens'>Social Media</div>
+                <div datatype='Lançamentos' className='services__topics-itens'>Lançamentos</div>
+                <div datatype='Tráfego Pago' className='services__topics-itens'>Tráfego Pago</div>
+                <div datatype='Audio Visual' className='services__topics-itens'>Audio Visual</div>
+                <div datatype='Identidade Visual' className='services__topics-itens'>Identidade Visual</div>
+                <div datatype='Websites' className='services__topics-itens'>Websites</div>
+                <div datatype='Social Media' className='services__topics-itens'>Social Media</div>
             </div>
         </div>
     </section>

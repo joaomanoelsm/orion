@@ -1,0 +1,43 @@
+#error {
+    width: 100%;
+    background-color: var(--main-color);
+    margin: 12rem 0;
+
+    #error__container {
+        height: 70rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        #error__logo {
+            width: 30.3rem;
+        }
+    
+        #error__title {
+            @include text-settings( 40rem, 40rem, 'Aceh', var(--dark-main-color));
+            position: relative;
+            letter-spacing: -30px;
+            font-weight: bolder;
+    
+            &::after {
+                content: 'Página não encontrada';
+                @include text-settings( 3.6rem, 3.6rem, 'Aceh', var(--light-text-color));
+                text-transform: uppercase;
+                
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate3d( -50%, -50%, 0 );
+                white-space: nowrap;
+            }
+        }
+    
+        #error__button {
+            @include text-settings( 3.2rem, 3.2rem, 'Aceh', var(--light-text-color));
+            padding: 2.4rem 4rem;
+            border: none;
+            border-radius: 1.2rem;
+            background-color: var(--dark-main-color);
+        }
+    }
+}

@@ -36,21 +36,10 @@
     scroll-behavior: smooth;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
 }
 
-#main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 @mixin text-settings( $size, $line-heigth, $family, $color ) {
     font-size: $size;

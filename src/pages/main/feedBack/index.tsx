@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import FeedBackBackground from '../../../assets/imgs/Background-Feedback.jpg'
 import StarsIcon from '../../../assets/svgs/Icon-Stars.svg'
-import Slide from './slide'
+import Slide from '../slide'
 
 const FeedBack = () => {
     const slideRef = useRef<HTMLDivElement>(null!)

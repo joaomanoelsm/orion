@@ -18,7 +18,7 @@ const Slide = ({ elem, time }: SlideI) => {
             elem.current.appendChild( elem.current.firstElementChild! )
             elem.current.style.transform = 'translateX(0)'
             
-            setTimeout( () => elem.current.style.transition = 'all 1s' )
+            setTimeout( () => elem.current.style.transition = 'all 1s ease-out' )
         }
     })
 
