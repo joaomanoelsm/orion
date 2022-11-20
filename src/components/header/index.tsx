@@ -3,21 +3,24 @@ import { useNavigate } from 'react-router-dom'
 import Logo from '../../assets/svgs/Logo-Header.svg'
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const backPage = () => {
+    navigate('/orion/')
+    window.scrollTo(0, 0)
+  }
 
   useEffect( () => {
     const header = document.querySelector('#header') as HTMLHeadElement
 
-    console.log( window.location.pathname )
-
-    const url = window.location.pathname 
-
-    if ( url !== '/orion/' ) header.style.background = 'red';
-  }, [ useNavigate ])
-
-  useEffect( () => {
-    const header = document.querySelector('#header') as HTMLHeadElement
-
-    const headerToggle = () => header.classList.toggle('header--background', scrollY > 0 )
+    const headerToggle = () => {
+      const url = window.location.pathname 
+      
+      if ( url === '/orion/') {
+        return header.classList.toggle('header--background', scrollY > 0 )
+      }
+      header.classList.add('header--background')
+    }
 
     window.addEventListener('scroll', headerToggle)
   })
@@ -34,13 +37,15 @@ const Header = () => {
 
     menu.onclick = () => toggleMenu()
 
-    links.forEach( ( link: HTMLLIElement ) => link.onclick = () => toggleMenu() )
+    links.forEach( ( link: HTMLLIElement ) => {
+      link.onclick = () => toggleMenu()
+    } )
   })
 
   return (
     <header id='header'>
       <div id='header__container'>
-        <img id='header__logo' src={ Logo } alt="Logo" />
+        <img onClick={ backPage } id='header__logo' src={ Logo } alt="Logo" />
         <nav id='header__navbar'>
             <ul className='header__list'>
                 <li datatype='Inicio' className='header__links'><a href="#start">Inicio</a></li>

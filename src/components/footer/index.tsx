@@ -8,6 +8,11 @@ import { useNavigate } from 'react-router-dom'
 const Footer = () => {
     const navigate = useNavigate()
 
+    const nextPage = ( link: string ) => {
+      navigate(`/${ link }/`)
+      window.scrollTo(0, 0)
+    }
+
   return (
     <footer id='footer'>
         <div id='footer__container'>
@@ -29,9 +34,9 @@ const Footer = () => {
                         <h3 className='footer__list-title'>Política</h3>
                         <hr />
                         <ul className='footer__lists'>
-                            <li><a onClick={ () => navigate('/error')} >Termos de uso</a></li>
-                            <li><a onClick={ () => navigate('/error')} >Política de privacidade</a></li>
-                            <li><a onClick={ () => navigate('/error')} >Política de Cookies</a></li> 
+                            <li><a onClick={ () => nextPage('termos') } >Termos de uso</a></li>
+                            <li><a onClick={ () => nextPage('privacidade') } >Política de privacidade</a></li>
+                            <li><a onClick={ () => nextPage('cookies') } >Política de Cookies</a></li> 
                         </ul>
                     </div>
                 </div>
