@@ -3,7 +3,7 @@ import InstragramIcon from '../../assets/svgs/Icon-Instagram.svg'
 import TwitterIcon from '../../assets/svgs/Icon-Twitter.svg'
 import TiktokIcon from '../../assets/svgs/Icon-Tiktok.svg'
 import FacebookIcon from '../../assets/svgs/Icon-Facebook.svg'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Footer = () => {
     const navigate = useNavigate()
