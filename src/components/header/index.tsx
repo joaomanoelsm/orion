@@ -9,7 +9,7 @@ const Header = () => {
     navigate('/orion/')
     window.scrollTo(0, 0)
   }
-
+  
   useEffect( () => {
     const header = document.querySelector('#header') as HTMLHeadElement
 
@@ -42,11 +42,26 @@ const Header = () => {
     } )
   })
 
+  useEffect( () => {
+    const logo = document.querySelector('.header__logo') as HTMLImageElement
+    const button = document.querySelector('.header__button-link') as HTMLButtonElement
+    
+    const animation = () => {
+      logo.setAttribute('id', 'header--animation')
+
+      setTimeout( () => {
+        button.setAttribute('id', 'header--animation')
+      }, 500)
+    }
+
+    window.addEventListener('load', animation )
+  })
+
   return (
     <header id='header'>
-      <div id='header__container'>
-        <img onClick={ backPage } id='header__logo' src={ Logo } alt="Logo" />
-        <nav id='header__navbar'>
+      <div className='header__container'>
+        <img onClick={ backPage } className='header__logo' src={ Logo } alt="Logo" />
+        <nav className='header__navbar'>
             <ul className='header__list'>
                 <li datatype='Inicio' className='header__links'><a href="#start">Inicio</a></li>
                 <li datatype='Serviços' className='header__links'><a href="#services">Serviços</a></li>
@@ -59,7 +74,7 @@ const Header = () => {
               <div className='header__menu-lines'></div>
             </div>
         </nav>
-        <a id='header__button-link' href="#"><button id='header__button'>Iniciar</button></a>
+        <a className='header__button-link' href="#"><button className='header__button'>Iniciar</button></a>
       </div>
     </header>
   )

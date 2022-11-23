@@ -9,21 +9,21 @@
     justify-content: center;
     z-index: 0;
 
-    #whyOrion__container {
+    .whyOrion__container {
         width: 131rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        #whyOrion__title-contain {
+        .whyOrion__title-contain {
             width: 58rem;
 
-            #whyOrion__icon {
+            .whyOrion__icon {
                 width: 13rem;
                 margin-bottom: 1.2rem
             }
 
-            #whyOrion__title {
+            .whyOrion__title {
                 @include text-settings( 4.2rem, 4.4rem, 'arp_bold', var(--dark-title-color));
 
                 span {
@@ -33,7 +33,7 @@
 
         }
 
-        #whyOrion__info {
+        .whyOrion__info {
             position: relative;
             max-width: 61.2rem;
 
@@ -48,7 +48,7 @@
             a {
                 text-decoration: none;
 
-                #whyOrion__button {
+                .whyOrion__button {
                     @include text-settings( 3.2rem, 3.2rem, 'arp_bold', var(--light-title-color));
                     background-color: var(--main-color);
                     margin-top: 2.4rem;
@@ -94,7 +94,7 @@
                 }
             }
 
-            #whyOrion__decorator {
+            .whyOrion__decorator {
                 z-index: -1;
                 width: 40rem;
                 position: absolute;
@@ -138,10 +138,10 @@
 @media (max-width: 900px) {
     #whyOrion {
 
-        #whyOrion__container {
+        .whyOrion__container {
             flex-direction: column;
 
-            #whyOrion__title-contain {
+            .whyOrion__title-contain {
                 margin-bottom: 4rem;
             }
         }
@@ -151,23 +151,23 @@
 @media (max-width: 425px) {
     #whyOrion {
 
-        #whyOrion__container {
+        .whyOrion__container {
             width: 80%;
 
-            #whyOrion__title-contain {
+            .whyOrion__title-contain {
                 width: 100%;
     
-                #whyOrion__icon {
+                .whyOrion__icon {
                     width: 13rem;
                     margin-bottom: 1.2rem
                 }
     
-                #whyOrion__title {
+                .whyOrion__title {
                     @include text-settings( 3.2rem, 3.4rem, 'arp_bold', var(--dark-text-color));
                 }
             }
 
-            #whyOrion__info {
+            .whyOrion__info {
                 max-width: 61.2rem;
                 border: 1px solid black;
                 padding: 4rem;

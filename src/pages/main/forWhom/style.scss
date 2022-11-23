@@ -7,9 +7,9 @@
     align-items: center;
     justify-content: center;
 
-    #forWhom__container {
+    .forWhom__container {
 
-        #forWhom__title {
+        .forWhom__title {
             @include text-settings( 4rem, 4rem, 'arp_bold', var(--dark-title-color));
 
             span {
@@ -17,7 +17,7 @@
             }
         }
 
-        #forWhom__itens-contain {
+        .forWhom__itens-contain {
             width: 136rem;
 
             margin: 6rem 0 4rem 0;
@@ -50,7 +50,7 @@
         a {
             text-decoration: none;
 
-            #forWhom__button {
+            .forWhom__button {
                 @include text-settings( 2.4rem, 2.4rem, 'arp_bold', var(--light-title-color));
                 background-color: var(--main-color);
                 margin-top: 2.4rem;
@@ -101,9 +101,9 @@
     #forWhom {
         height: 960px;
 
-        #forWhom__container {
+        .forWhom__container {
 
-            #forWhom__itens-contain {
+            .forWhom__itens-contain {
                 width: 40rem;
                 flex-wrap: wrap;
                 justify-content: center;
