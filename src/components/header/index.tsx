@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Logo from '../../assets/svgs/Logo-Header.svg'
+import Logo from '../../assets/svgs/Logo.svg'
 
 const Header = () => {
   const navigate = useNavigate()
@@ -45,13 +45,24 @@ const Header = () => {
   useEffect( () => {
     const logo = document.querySelector('.header__logo') as HTMLImageElement
     const button = document.querySelector('.header__button-link') as HTMLButtonElement
+    const links = document.querySelectorAll('.header__links') as NodeListOf<HTMLLIElement>
     
     const animation = () => {
       logo.setAttribute('id', 'header--animation')
 
       setTimeout( () => {
+
+        links.forEach( ( link: HTMLLIElement, index: number ) => {
+          setTimeout( () => {
+            link.setAttribute('id', 'header--animation')
+          }, index * 100 )
+        })
+
+      }, 500 )
+
+      setTimeout( () => {
         button.setAttribute('id', 'header--animation')
-      }, 500)
+      }, 1000)
     }
 
     window.addEventListener('load', animation )

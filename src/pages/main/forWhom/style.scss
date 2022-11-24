@@ -28,13 +28,13 @@
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                justify-content: center;
+                justify-content: start;
 
                 border: 1px solid black;
                 border-radius: 2.4rem;
-                padding: 11rem 6rem 13rem 6rem;
-                max-width: 40rem;
-                max-height: 40rem;
+                padding: 6rem 6rem 0rem 6rem;
+                width: 40rem;
+                height: 40rem;
 
                 .forWhom__itens-title {
                     @include text-settings( 2rem, 2rem, 'arp_bold', var(--main-color));

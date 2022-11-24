@@ -1,4 +1,4 @@
-import FooterLogo from '../../assets/svgs/Logo-Footer.svg'
+import Logo from '../../assets/svgs/Logo.svg'
 import InstragramIcon from '../../assets/svgs/Icon-Instagram.svg'
 import TwitterIcon from '../../assets/svgs/Icon-Twitter.svg'
 import TiktokIcon from '../../assets/svgs/Icon-Tiktok.svg'
@@ -17,7 +17,7 @@ const Footer = () => {
     <footer id='footer'>
         <div id='footer__container'>
             <div id='footer__info'>
-                <img id='footer__logo' src={ FooterLogo } alt="Logo do rodapé" />
+                <img id='footer__logo' src={ Logo } alt="Logo do rodapé" />
                 <div id='footer__lists-container'>
                     <div id='footer__list-about'>
                         <h3 className='footer__list-title'>Sobre</h3>

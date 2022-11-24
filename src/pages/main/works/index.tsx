@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import WorkBackground from '../../../assets/imgs/Background-Works.jpg'
 import Slide from '../slide'
+import WorkImg1 from '../../../assets/imgs/Img-Works-1.jpg'
+import WorkImg2 from '../../../assets/imgs/Img-Works-2.jpg'
+import WorkImg3 from '../../../assets/imgs/Img-Works-3.jpg'
+import WorkImg4 from '../../../assets/imgs/Img-Works-4.jpg'
 
 const Works = () => {
     const slideRef = useRef<HTMLDivElement>(null!)
@@ -8,20 +12,20 @@ const Works = () => {
 
     const worksArray = [
         {
-            img: 'url',
-            title: 'Cliente'
+            img: WorkImg1,
+            title: 'Jasa'
         },
         {
-            img: 'url',
-            title: 'Cliente'
+            img: WorkImg2,
+            title: 'Vd. campos'
         },
         {
-            img: 'url',
-            title: 'Cliente'
+            img: WorkImg3,
+            title: 'Cetta'
         },
         {
-            img: 'url',
-            title: 'Cliente'
+            img: WorkImg4,
+            title: 'CDT Tia Aila'
         },
     ]
 
@@ -42,9 +46,9 @@ const Works = () => {
                 <div ref={ slideRef } id='works__slide'>
                     {
                         worksArray.map( ( work, index ) => (
-                            <div key={ index } className='works__itens'>
+                            <div key={ index + 1 } className='works__itens'>
                                 <div id='works__img-contain'>
-                                    <img id='works__img' src="" alt="Imagem dos projetos" />
+                                    <img id='works__img' src={ work.img } alt="Imagem dos projetos" />
                                 </div>
                                 <h3 id='works__itens-title'>{ work.title }</h3>
                             </div>

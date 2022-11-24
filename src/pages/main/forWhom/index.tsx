@@ -11,19 +11,22 @@ const ForWhom = () => {
                 <div className='forWhom__itens'>
                     <h3 className='forWhom__itens-title'>Empreendedores</h3>
                     <p className='forWhom__text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui, dignissimos earum corporis fugiat saepe, vero
+                        Na Orion você vai encontrar toda uma equipe de profissionais preparados para
+                        alcançar suas metas!
                     </p>
                 </div>
                 <div className='forWhom__itens'>
                     <h3 className='forWhom__itens-title'>Empresas</h3>
                     <p className='forWhom__text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui, dignissimos earum corporis fugiat saepe, vero
+                        Grandes empresas necessitam de um time de valor, responsável e competente 
+                        para cuidar de todo o tráfico de informações que compõe um grande negócio.                    
                     </p>
                 </div>
                 <div className='forWhom__itens'>
                     <h3 className='forWhom__itens-title'>Influencers</h3>
                     <p className='forWhom__text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui, dignissimos earum corporis fugiat saepe, vero
+                        Nós, da Orion Soluções Digitais, somos responsáveis pela organização
+                         e projeção de diversos negócios de sucesso.                    
                     </p>
                 </div>
             </div>

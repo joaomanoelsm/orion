@@ -39,6 +39,10 @@
                     transition: all .4s;
                     list-style: none;
 
+                    transition: all 1s cubic-bezier(.32,1.75,.36,.67);
+                    transform: translateY(-100%);
+                    opacity: 0;
+
                     &::after {
                         @include text-settings( 1.7rem, 1.7rem, 'arp_display_normal', var(--light-text-color));
                         content: attr(datatype);
@@ -104,7 +108,7 @@
     
             .header__button {
                 @include text-settings( 2.2rem, 2.2rem, 'arp_display_normal', var(--light-text-color));
-                transition: border .7s ease-in;
+                transition: all .7s ease-in;
                 cursor: pointer;
                 
                 border: 0.1rem solid white;
