@@ -42,31 +42,31 @@ const Header = () => {
     } )
   })
 
-  useEffect( () => {
-    const logo = document.querySelector('.header__logo') as HTMLImageElement
-    const button = document.querySelector('.header__button-link') as HTMLButtonElement
-    const links = document.querySelectorAll('.header__links') as NodeListOf<HTMLLIElement>
+  // useEffect( () => {
+  //   const logo = document.querySelector('.header__logo') as HTMLImageElement
+  //   const button = document.querySelector('.header__button-link') as HTMLButtonElement
+  //   const links = document.querySelectorAll('.header__links') as NodeListOf<HTMLLIElement>
     
-    const animation = () => {
-      logo.setAttribute('id', 'header--animation')
+  //   const animation = () => {
+  //     logo.setAttribute('id', 'header--animation')
 
-      setTimeout( () => {
-        links.forEach( ( link: HTMLLIElement, index: number ) => {
-          setTimeout( () => {
-            link.setAttribute('id', 'header--animation')
-          }, index * 100 )
-        })
+  //     setTimeout( () => {
+  //       links.forEach( ( link: HTMLLIElement, index: number ) => {
+  //         setTimeout( () => {
+  //           link.setAttribute('id', 'header--animation')
+  //         }, index * 100 )
+  //       })
 
-      }, 500 )
+  //     }, 500 )
 
-      setTimeout( () => {
-        button.setAttribute('id', 'header--animation')
-      }, 1000)
+  //     setTimeout( () => {
+  //       button.setAttribute('id', 'header--animation')
+  //     }, 1000)
 
-    }
+  //   }
 
-    animation()
-  })
+  //   animation()
+  // })
 
   return (
     <header id='header'>
