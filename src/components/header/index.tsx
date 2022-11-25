@@ -51,7 +51,6 @@ const Header = () => {
       logo.setAttribute('id', 'header--animation')
 
       setTimeout( () => {
-
         links.forEach( ( link: HTMLLIElement, index: number ) => {
           setTimeout( () => {
             link.setAttribute('id', 'header--animation')
@@ -63,9 +62,10 @@ const Header = () => {
       setTimeout( () => {
         button.setAttribute('id', 'header--animation')
       }, 1000)
+
     }
 
-    window.addEventListener('load', animation )
+    animation()
   })
 
   return (
