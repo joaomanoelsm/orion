@@ -1,4 +1,3 @@
-import ContactImg from '../../../assets/imgs/Img-Contact.png'
 import Lottie from 'lottie-react'
 import ComputerAnimation from '../../../assets/animations/computerAnimation.json'
 

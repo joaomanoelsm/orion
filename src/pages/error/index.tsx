@@ -1,13 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import ErrorLogo from '../../assets/svgs/Logo-Footer.svg'
-import ErrorImg from '../../assets/imgs/Img-Error.png'
-import { useLottie } from 'lottie-react'
 import Lottie from 'lottie-react'
 import ErrorAnimation from '../../assets/animations/errorAnimation.json'
 
 const Error = () => {
-
-
   const navigate = useNavigate()
 
   const backPage = () => {
@@ -19,7 +15,7 @@ const Error = () => {
     <section id="error">
         <div id='error__container'>
             <img id="error__logo" src={ ErrorLogo } alt="logo" />
-            <Lottie animationData={ ErrorAnimation } style={{ position: 'absolute', top: '-4rem'}}></Lottie>
+            <Lottie id='error__img' animationData={ ErrorAnimation }></Lottie>
             <button onClick={ backPage } id="error__button">Voltar ao inicio</button>
         </div>
     </section>

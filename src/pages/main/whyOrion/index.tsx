@@ -12,7 +12,7 @@ const WhyOrion = () => {
             </div>
             <div className="whyOrion__info">
                 <p className="whyOrion__text">
-                    "Seu sucesso pede nossa qualidade"!, Essa frase mais que define todos os porquês que devem esta em sua mente neste momento, carregamos o termo soluções em nosso nome, então podemos definir que todos seus problemas no digital acabam de ter um fim, pois está dianta da Orion, agência que foi criada com intuito de facilitar todos os processos que levam a ter sucesso no digital!
+                    "Seu sucesso pede nossa qualidade", Essa frase mais que define todos os porquês que devem esta em sua mente neste momento, carregamos o termo soluções em nosso nome, então podemos definir que todos seus problemas no digital acabam de ter um fim, pois está dianta da Orion, agência que foi criada com intuito de facilitar todos os processos que levam a ter sucesso no digital!
                 </p>
                 <br />
                 <p className="whyOrion__text">

@@ -1,5 +1,5 @@
 import ProcedureBackground from '../../../assets/imgs/Background-Planning.jpg'
-import ArrowIcon from '../../../assets/svgs/Icon-Arrow-Bottom.svg'
+import ArrowIcon from '../../../assets/imgs/Icon-Arrow-Down.png'
 
 import Icon1 from '../../../assets/svgs/Icon-1.svg'
 import Icon2 from '../../../assets/svgs/Icon-2.svg'

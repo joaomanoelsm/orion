@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import WhiteBackground from '../../../assets/imgs/Background-ForWhon.jpg'
 
 const ForWhom = () => {
@@ -12,7 +11,7 @@ const ForWhom = () => {
                     <h3 className='forWhom__itens-title'>Empreendedores</h3>
                     <p className='forWhom__text'>
                         Na Orion você vai encontrar toda uma equipe de profissionais preparados para
-                        alcançar suas metas!
+                         te fazer alcançar todas as suas metas e alcança-las da melhor maneira!
                     </p>
                 </div>
                 <div className='forWhom__itens'>
@@ -25,8 +24,7 @@ const ForWhom = () => {
                 <div className='forWhom__itens'>
                     <h3 className='forWhom__itens-title'>Influencers</h3>
                     <p className='forWhom__text'>
-                        Nós, da Orion Soluções Digitais, somos responsáveis pela organização
-                         e projeção de diversos negócios de sucesso.                    
+                    Nós, da Orion Soluções Digitais, somos responsáveis pela sintetização, organização e projeção de diversos negócios de sucesso no meio físico e digital.              
                     </p>
                 </div>
             </div>

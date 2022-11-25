@@ -1,7 +1,6 @@
-import { useEffect } from 'react'
 import StartBackground from '../../../assets/imgs/Background-Home.jpg'
 import StartImg from '../../../assets/imgs/Img-Home.png'
-import ArrowIcon from '../../../assets/svgs/Icon-Arrow-Bottom.svg'
+import ArrowIcon from '../../../assets/imgs/Icon-Arrow-Down.png'
 
 const Start = () => {
 

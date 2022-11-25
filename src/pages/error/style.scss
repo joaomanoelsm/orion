@@ -6,7 +6,9 @@
     padding: 20.6rem 0 12rem 0;
 
     #error__container {
+        position: relative;
         height: 70rem;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -15,6 +17,12 @@
         #error__logo {
             width: 30.3rem;
             z-index: 2;
+        }
+
+        #error__img {
+            position: absolute;
+            top: -40%;
+            width: 108rem;
         }
     
         #error__button {
@@ -31,6 +39,19 @@
             &:hover {
                 transform: translate3d( -0.5rem, -0.5rem, 0);
                 box-shadow: 0.7rem 0.8rem 0.4rem 0 hsla(0, 0%, 0%, 0.253);
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    #error {
+    
+        #error__container {
+    
+            #error__img {
+                top: 4rem;
+                width: 55.5rem;
             }
         }
     }
