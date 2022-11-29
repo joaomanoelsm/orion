@@ -24,10 +24,15 @@
             top: -40%;
             width: 108rem;
         }
-    
+
         #error__button {
-            @include text-settings( 3.2rem, 3.2rem, 'Aceh', var(--light-text-color));
-            transition: all .4s;
+            @include text-settings(
+                3.2rem,
+                3.2rem,
+                'Aceh',
+                var(--light-text-color)
+            );
+            transition: all 0.4s;
             cursor: pointer;
             z-index: 2;
 
@@ -37,7 +42,7 @@
             background-color: var(--main-color);
 
             &:hover {
-                transform: translate3d( -0.5rem, -0.5rem, 0);
+                transform: translate3d(-0.5rem, -0.5rem, 0);
                 box-shadow: 0.7rem 0.8rem 0.4rem 0 hsla(0, 0%, 0%, 0.253);
             }
         }
@@ -46,9 +51,7 @@
 
 @media (max-width: 620px) {
     #error {
-    
         #error__container {
-    
             #error__img {
                 top: 4rem;
                 width: 55.5rem;

@@ -21,12 +21,22 @@
             }
 
             .services__title {
-                @include text-settings( 4.2rem, 4.2rem, 'arp_bold', var(--light-title-color));
+                @include text-settings(
+                    4.2rem,
+                    4.2rem,
+                    'arp_bold',
+                    var(--light-title-color)
+                );
                 margin: 3.4rem 0 2rem 0;
             }
 
             .services__text {
-                @include text-settings( 3.2rem, 3.2rem, 'Aceh', var(--light-text-color));
+                @include text-settings(
+                    3.2rem,
+                    3.2rem,
+                    'Aceh',
+                    var(--light-text-color)
+                );
                 width: 67rem;
             }
         }
@@ -47,47 +57,62 @@
 
                 width: 100%;
                 max-width: 42.53rem;
-                background: linear-gradient(to right, var(--main-color) -50%, white);
+                background: linear-gradient(
+                    to right,
+                    var(--main-color) -50%,
+                    white
+                );
                 padding: 3.4rem;
-                
-                @include text-settings( 2.8rem, 2.8rem, 'arp_bold', var(--main-color));
+
+                @include text-settings(
+                    2.8rem,
+                    2.8rem,
+                    'arp_bold',
+                    var(--main-color)
+                );
                 cursor: pointer;
                 position: relative;
 
                 &::after {
-                    @include text-settings( 1em, 1em, 'arp_bold', var(--main-color));
+                    @include text-settings(
+                        1em,
+                        1em,
+                        'arp_bold',
+                        var(--main-color)
+                    );
                     content: attr(datatype);
-                    transition: all .7s;
+                    transition: all 0.7s;
                     position: absolute;
 
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    top:0; left: 0;
+                    top: 0;
+                    left: 0;
                     z-index: 2;
                     opacity: 0;
 
                     width: 100%;
                     height: 100%;
-                    background: linear-gradient(to left, var(--main-color) -50%, white);
+                    background: linear-gradient(
+                        to left,
+                        var(--main-color) -50%,
+                        white
+                    );
                 }
-                
+
                 &:hover::after {
                     opacity: 1;
                 }
             }
         }
-
     }
 }
 
-
 @media (max-width: 900px) {
     #services {
-    
         .services__container {
-    
             .services__topics {
                 justify-content: center;
                 column-gap: 1rem;
@@ -101,9 +126,8 @@
 @media (max-width: 676px) {
     #services {
         height: 800px;
-    
+
         .services__container {
-    
             .services__topics {
                 justify-content: center;
                 column-gap: 1rem;
@@ -116,18 +140,26 @@
 
 @media (max-width: 425px) {
     #services {
-        
         .services__container {
             width: 80%;
-    
-            .services__info {
 
+            .services__info {
                 .services__title {
-                    @include text-settings( 3.2rem, 3.2rem, 'arp_bold', var(--light-title-color));
+                    @include text-settings(
+                        3.2rem,
+                        3.2rem,
+                        'arp_bold',
+                        var(--light-title-color)
+                    );
                 }
 
                 .services__text {
-                    @include text-settings( 2rem, 2rem, 'Aceh', var(--light-title-color));
+                    @include text-settings(
+                        2rem,
+                        2rem,
+                        'Aceh',
+                        var(--light-title-color)
+                    );
                     width: 100%;
                 }
             }

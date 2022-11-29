@@ -14,11 +14,16 @@
         justify-content: center;
 
         #feedBack__title {
-            @include text-settings( 6.4rem, 6.4rem, 'arp_bold', var(--light-title-color) );
+            @include text-settings(
+                6.4rem,
+                6.4rem,
+                'arp_bold',
+                var(--light-title-color)
+            );
         }
 
         #feedBack__text {
-            @include text-settings( 3.6rem, 3.6rem, 'Aceh', #C5C5C5 );
+            @include text-settings(3.6rem, 3.6rem, 'Aceh', #c5c5c5);
             margin-bottom: 10rem;
         }
 
@@ -44,35 +49,49 @@
                     align-items: center;
                     column-gap: 1.2rem;
                     padding: 0 4.5rem;
-    
+
                     .feedBack__img-contain {
                         flex-shrink: 0;
                         width: 13.5rem;
                         height: 13.5rem;
                         background-color: var(--dark-main-color);
-    
+
                         .feedBack__img {
                             width: 100%;
                         }
                     }
-    
+
                     .feedBack__info {
-    
                         .feedBack__summary {
-                            @include text-settings( 2.4rem, 2.4rem, 'Aceh', #EBEBEB )
+                            @include text-settings(
+                                2.4rem,
+                                2.4rem,
+                                'Aceh',
+                                #ebebeb
+                            );
                         }
-        
+
                         .feedBack__icon {
                             width: 11.7rem;
                             margin-bottom: 1.6rem;
                         }
-        
+
                         .feedBack__name {
-                            @include text-settings( 2.4rem, 2.4rem, 'Aceh', var(--light-text-color) )
+                            @include text-settings(
+                                2.4rem,
+                                2.4rem,
+                                'Aceh',
+                                var(--light-text-color)
+                            );
                         }
-        
+
                         .feedBack__job {
-                            @include text-settings( 1.6rem, 2.4rem, 'Aceh', var(--light-text-color) )
+                            @include text-settings(
+                                1.6rem,
+                                2.4rem,
+                                'Aceh',
+                                var(--light-text-color)
+                            );
                         }
                     }
                 }
@@ -83,7 +102,6 @@
 
 @media (max-width: 900px) {
     #feedBack {
-
         #feedBack__container {
             width: 90%;
 
@@ -96,15 +114,18 @@
 
 @media (max-width: 900px) {
     #feedBack {
-
         #feedBack__container {
-
             #feedBack__title {
-                @include text-settings( 3.4rem, 3.4rem, 'arp_bold', var(--light-title-color));
+                @include text-settings(
+                    3.4rem,
+                    3.4rem,
+                    'arp_bold',
+                    var(--light-title-color)
+                );
             }
 
             #feedBack__text {
-                @include text-settings( 2.6rem, 2.6rem, 'Aceh', #C5C5C5 );
+                @include text-settings(2.6rem, 2.6rem, 'Aceh', #c5c5c5);
             }
         }
     }

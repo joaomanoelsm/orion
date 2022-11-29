@@ -15,7 +15,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            @include text-settings( 4.2rem, 4.2rem, 'arp_bold', var(--light-title-color));
+            @include text-settings(
+                4.2rem,
+                4.2rem,
+                'arp_bold',
+                var(--light-title-color)
+            );
 
             &::after {
                 content: '';
@@ -39,7 +44,12 @@
                 margin-bottom: 16rem;
 
                 li {
-                    @include text-settings( 3.2rem, 2.4rem, 'Aceh', var(--light-text-color));
+                    @include text-settings(
+                        3.2rem,
+                        2.4rem,
+                        'Aceh',
+                        var(--light-text-color)
+                    );
                     display: flex;
                     align-items: start;
                     gap: 1rem;
@@ -50,7 +60,11 @@
         #procedure__decorator {
             width: 70rem;
             height: 70rem;
-            background: linear-gradient(to bottom, var(--main-color), transparent 50%);
+            background: linear-gradient(
+                to bottom,
+                var(--main-color),
+                transparent 50%
+            );
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -60,33 +74,41 @@
                 position: relative;
                 width: 60rem;
                 height: 60rem;
-                
+
                 text-align: center;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-
                 &::before {
-                    content: "";
+                    content: '';
                     position: absolute;
                     inset: 0;
-                    
+
                     border-radius: 50%;
-                    padding: 2px; 
-                    background:linear-gradient( to bottom,rgb(255, 255, 255),rgba(255, 255, 255, 0) 70% ); 
-                    
-                    -webkit-mask: linear-gradient(#fff 0 0) content-box, 
-                    linear-gradient(#fff 0 0);
-                    mask: linear-gradient(#fff 0 0) content-box, 
-                    linear-gradient(#fff 0 0);
+                    padding: 2px;
+                    background: linear-gradient(
+                        to bottom,
+                        rgb(255, 255, 255),
+                        rgba(255, 255, 255, 0) 70%
+                    );
+
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                        linear-gradient(#fff 0 0);
+                    mask: linear-gradient(#fff 0 0) content-box,
+                        linear-gradient(#fff 0 0);
                     -webkit-mask-composite: xor;
-                    mask-composite: exclude; 
+                    mask-composite: exclude;
                 }
 
                 #procedure__topics {
-                    @include text-settings( 2.8rem, 4rem, 'arp_bold', var(--light-text-color));
+                    @include text-settings(
+                        2.8rem,
+                        4rem,
+                        'arp_bold',
+                        var(--light-text-color)
+                    );
                     list-style: none;
                     margin-bottom: 30rem;
                 }
@@ -121,7 +143,7 @@
         position: absolute;
         bottom: 0;
         transform: translateY(50%);
-        
+
         width: 18.2em;
         z-index: 10;
     }
@@ -130,9 +152,8 @@
 @media (max-width: 900px) {
     #procedure {
         height: 1080px;
-    
+
         #procedure__container {
-    
             #procedure__list-container {
                 flex-direction: column;
 
@@ -141,7 +162,6 @@
                 }
 
                 .procedure__lists {
-
                     &:nth-child(1) {
                         order: 2;
                         margin-bottom: 4rem;
@@ -159,15 +179,17 @@
 
 @media (max-width: 425px) {
     #procedure {
-    
         #procedure__container {
-
             #procedure__title {
-                @include text-settings( 3.4rem, 3.4rem, 'arp_bold', var(--light-title-color));
+                @include text-settings(
+                    3.4rem,
+                    3.4rem,
+                    'arp_bold',
+                    var(--light-title-color)
+                );
             }
-    
-            #procedure__list-container {
 
+            #procedure__list-container {
                 #procedure__decorator {
                     width: 320px;
                     height: 320px;
@@ -178,7 +200,12 @@
                     }
 
                     #procedure__topics {
-                        @include text-settings( 2rem, 3.2rem, 'arp_bold', var(--light-text-color));
+                        @include text-settings(
+                            2rem,
+                            3.2rem,
+                            'arp_bold',
+                            var(--light-text-color)
+                        );
                         margin-bottom: 24rem;
                     }
                 }

@@ -12,7 +12,12 @@ const Contact = () => {
                         Comece agora mesmo a levar o seu empreedimento a um novo
                         nível
                     </p>
-                    <button id="contact__button">Iniciar</button>
+                    <a
+                        target={'_blank'}
+                        href="https://linker.fit/iIaLDbyxYhzHhcg"
+                    >
+                        <button id="contact__button">Iniciar</button>
+                    </a>
                 </div>
             </div>
         </section>

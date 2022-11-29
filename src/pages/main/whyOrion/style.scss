@@ -20,17 +20,21 @@
 
             .whyOrion__icon {
                 width: 13rem;
-                margin-bottom: 1.2rem
+                margin-bottom: 1.2rem;
             }
 
             .whyOrion__title {
-                @include text-settings( 4.2rem, 4.4rem, 'arp_bold', var(--dark-title-color));
+                @include text-settings(
+                    4.2rem,
+                    4.4rem,
+                    'arp_bold',
+                    var(--dark-title-color)
+                );
 
                 span {
                     color: var(--main-color);
                 }
             }
-
         }
 
         .whyOrion__info {
@@ -42,52 +46,78 @@
             border-radius: 3rem;
 
             .whyOrion__text {
-                @include text-settings( 2.4rem, 2.2rem, 'Aceh', var(--dark-text-color));
+                @include text-settings(
+                    2.4rem,
+                    2.2rem,
+                    'Aceh',
+                    var(--dark-text-color)
+                );
             }
 
             a {
                 text-decoration: none;
 
                 .whyOrion__button {
-                    @include text-settings( 3.2rem, 3.2rem, 'arp_bold', var(--light-title-color));
+                    @include text-settings(
+                        3.2rem,
+                        3.2rem,
+                        'arp_bold',
+                        var(--light-title-color)
+                    );
                     background-color: var(--main-color);
                     margin-top: 2.4rem;
                     cursor: pointer;
-    
+
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
+
                     position: relative;
                     width: 100%;
                     border: none;
                     padding: 2.2rem 0;
 
                     &::after {
-                        @include text-settings( 1em, 1em, 'arp_bold', var(--light-title-color));
+                        @include text-settings(
+                            1em,
+                            1em,
+                            'arp_bold',
+                            var(--light-title-color)
+                        );
                         content: 'Saiba mais';
-                        transition: all .7s;
+                        transition: all 0.7s;
                         position: absolute;
-    
+
                         display: flex;
                         align-items: center;
                         justify-content: center;
-    
-                        top:0; left: 0;
+
+                        top: 0;
+                        left: 0;
                         z-index: 2;
                         opacity: 0;
-    
+
                         width: 100%;
                         height: 100%;
 
-                        background: linear-gradient(to right, #533fc4, #8529b0, #533fc4, #8529b0, #533fc4, #8529b0, #533fc4);
+                        background: linear-gradient(
+                            to right,
+                            #533fc4,
+                            #8529b0,
+                            #533fc4,
+                            #8529b0,
+                            #533fc4,
+                            #8529b0,
+                            #533fc4
+                        );
                         background-size: 1200% 100%;
-                        
+
                         animation: infinit 10s ease infinite forwards;
-                        -webkit-animation: infinit 10s ease-in-out infinite forwards;
+                        -webkit-animation: infinit 10s ease-in-out infinite
+                            forwards;
                         -moz-animation: infinit 10s ease infinite forwards;
                     }
-    
+
                     &:hover::after {
                         opacity: 1;
                     }
@@ -98,23 +128,24 @@
                 z-index: -1;
                 width: 40rem;
                 position: absolute;
-                bottom: 0; right: 0;
+                bottom: 0;
+                right: 0;
                 transform: translate3d(50%, 75%, 0);
 
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                
+
                 .whyOrion__circle {
                     width: 20rem;
                     height: 20rem;
                     background-color: var(--light-main-color);
-                    
+
                     border-radius: 50%;
                     filter: blur(50px);
 
                     &:nth-child(odd) {
-                        background-color: #A74AF0;
+                        background-color: #a74af0;
                     }
 
                     &:nth-child(1) {
@@ -137,7 +168,6 @@
 
 @media (max-width: 900px) {
     #whyOrion {
-
         .whyOrion__container {
             flex-direction: column;
 
@@ -150,20 +180,24 @@
 
 @media (max-width: 425px) {
     #whyOrion {
-
         .whyOrion__container {
             width: 80%;
 
             .whyOrion__title-contain {
                 width: 100%;
-    
+
                 .whyOrion__icon {
                     width: 13rem;
-                    margin-bottom: 1.2rem
+                    margin-bottom: 1.2rem;
                 }
-    
+
                 .whyOrion__title {
-                    @include text-settings( 3.2rem, 3.4rem, 'arp_bold', var(--dark-text-color));
+                    @include text-settings(
+                        3.2rem,
+                        3.4rem,
+                        'arp_bold',
+                        var(--dark-text-color)
+                    );
                 }
             }
 

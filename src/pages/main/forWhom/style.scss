@@ -2,15 +2,19 @@
     width: 100%;
     height: 108rem;
     max-width: 1920px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     .forWhom__container {
-
         .forWhom__title {
-            @include text-settings( 4rem, 4rem, 'arp_bold', var(--dark-title-color));
+            @include text-settings(
+                4rem,
+                4rem,
+                'arp_bold',
+                var(--dark-title-color)
+            );
 
             span {
                 color: var(--main-color);
@@ -37,12 +41,22 @@
                 height: 40rem;
 
                 .forWhom__itens-title {
-                    @include text-settings( 2rem, 2rem, 'arp_bold', var(--main-color));
+                    @include text-settings(
+                        2rem,
+                        2rem,
+                        'arp_bold',
+                        var(--main-color)
+                    );
                     margin-bottom: 4rem;
                 }
 
                 .forWhom__text {
-                    @include text-settings( 2.4rem, 2.4rem, 'Aceh', var(--dark-title-color));
+                    @include text-settings(
+                        2.4rem,
+                        2.4rem,
+                        'Aceh',
+                        var(--dark-title-color)
+                    );
                 }
             }
         }
@@ -51,39 +65,59 @@
             text-decoration: none;
 
             .forWhom__button {
-                @include text-settings( 2.4rem, 2.4rem, 'arp_bold', var(--light-title-color));
+                @include text-settings(
+                    2.4rem,
+                    2.4rem,
+                    'arp_bold',
+                    var(--light-title-color)
+                );
                 background-color: var(--main-color);
                 margin-top: 2.4rem;
                 cursor: pointer;
-    
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
-    
+
                 position: relative;
                 border: none;
                 padding: 2.8rem 12rem;
 
                 &::after {
-                    @include text-settings( 1em, 1em, 'arp_bold', var(--light-title-color));
+                    @include text-settings(
+                        1em,
+                        1em,
+                        'arp_bold',
+                        var(--light-title-color)
+                    );
                     content: 'Saiba mais';
-                    transition: all .7s;
+                    transition: all 0.7s;
                     position: absolute;
 
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    top:0; left: 0;
+                    top: 0;
+                    left: 0;
                     z-index: 2;
                     opacity: 0;
 
                     width: 100%;
                     height: 100%;
 
-                    background: linear-gradient(to right, #533fc4, #8529b0, #533fc4, #8529b0, #533fc4, #8529b0, #533fc4);
+                    background: linear-gradient(
+                        to right,
+                        #533fc4,
+                        #8529b0,
+                        #533fc4,
+                        #8529b0,
+                        #533fc4,
+                        #8529b0,
+                        #533fc4
+                    );
                     background-size: 1200% 100%;
-                    
+
                     animation: infinit 10s ease infinite forwards;
                     -webkit-animation: infinit 10s ease-in-out infinite forwards;
                     -moz-animation: infinit 10s ease infinite forwards;
@@ -102,7 +136,6 @@
         height: 960px;
 
         .forWhom__container {
-
             .forWhom__itens-contain {
                 width: 40rem;
                 flex-wrap: wrap;
