@@ -16,7 +16,7 @@ const Header = () => {
         const changeHeaderBackground = () => {
             const url = window.location.pathname;
 
-            if (url === '/orion/') {
+            if (url === '/') {
                 return header.classList.toggle(
                     'header--background',
                     scrollY > 0

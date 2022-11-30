@@ -9,7 +9,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path="/orion" element={<Main />} />
+                <Route path="/" element={<Main />} />
                 <Route path="*" element={<Error />} />
             </Routes>
             <Footer />

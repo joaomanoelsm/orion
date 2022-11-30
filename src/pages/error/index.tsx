@@ -7,7 +7,7 @@ const Error = () => {
     const navigate = useNavigate();
 
     const backPage = () => {
-        navigate('/orion/');
+        navigate('/');
         window.scrollTo(0, 0);
     };
 
